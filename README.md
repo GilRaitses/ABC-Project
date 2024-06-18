@@ -49,13 +49,3 @@ This project processes whale tag data and creates composite time series dashboar
     ```
 
 The output files will be saved in the `output/event_composite_dashboards/` directory.
-
-## .gitignore
-
-Include the following in your `.gitignore` to ignore the output files and other unnecessary files:
-```
-output/
-*.RData
-*.Rhistory
-```
-This ensures that the generated output files and temporary files created by R are not included in the Git repository, keeping the repository clean and focused on the source code and data needed to reproduce the results.
