@@ -1,0 +1,52 @@
+whaleID,whaleName,sampleHz,eventStart,eventEnd,state,event
+mn09_203a,lavaliers_Calf,5,131,530,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,531,1130,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,1135,1975,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,1976,2860,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,2105,2390,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,2391,2570,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,2571,3100,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,3105,3675,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,3678,3970,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,3971,4240,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,4245,4605,Feeding,Side rolls and loop
+mn09_203a,lavaliers_Calf,5,4606,4905,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,4906,5215,Feeding,Feeding loop
+mn09_203a,lavaliers_Calf,5,5216,5490,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,5491,6100,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,6101,6349,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,6350,6468,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,6469,6650,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,6651,6905,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,6906,7190,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,7300,7666,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,7667,7788,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,7789,8050,Feeding,Feeding loop
+mn09_203a,lavaliers_Calf,5,8051,8160,Feeding,Side rolls and loop
+mn09_203a,lavaliers_Calf,5,8161,8220,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,8221,8705,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,8706,8860,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,8861,9295,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,9296,9514,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,9515,9725,Feeding,Feeding loop
+mn09_203a,lavaliers_Calf,5,9726,10035,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,10036,10239,Feeding,Vertical loop
+mn09_203a,lavaliers_Calf,5,10240,10688,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,10689,10987,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,10988,11345,Feeding,Kick feeding
+mn09_203a,lavaliers_Calf,5,11356,12040,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,12041,12200,Feeding,Feeding loop
+mn09_203a,lavaliers_Calf,5,12201,12253,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,12254,12445,Feeding,Feeding loop
+mn09_203a,lavaliers_Calf,5,12446,12525,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,12526,13580,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,13581,14105,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,14106,14389,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,14390,14850,Feeding,Noodle feeding
+mn09_203a,lavaliers_Calf,5,14851,15800,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,15801,16070,Feeding,Side rolls
+mn09_203a,lavaliers_Calf,5,16071,17690,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,17691,18192,Traveling,Traveling
+mn09_203a,lavaliers_Calf,5,18193,19240,Feeding,Surface Active
+mn09_203a,lavaliers_Calf,5,19241,19545,Feeding,Exploratory dives
+mn09_203a,lavaliers_Calf,5,19546,19546,End,End
