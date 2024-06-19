@@ -18,7 +18,7 @@ This project processes whale tag data and creates composite time series dashboar
 
 1. Clone the repository:
     ```{bash}
-    git clone https://github.com/yourusername/ABC-Project.git
+    git clone https://github.com/GilRaitses/ABC-Project.git
     cd ABC-Project
     ```
 
