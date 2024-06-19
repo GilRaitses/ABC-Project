@@ -4,44 +4,60 @@ This project processes whale tag data and creates composite time series dashboar
 
 ## Directory Structure
 
-- **data/**: Directory where the input CSV files should be placed.
-  - `mn09_203a.csv`: Data file for the project.
-  - `log_mn09_203a.csv`: Log data file for the project.
-- **scripts/**: Contains the R script for processing data and generating dashboards.
-  - `create_composite_dashboards.R`: The main script.
-- **output/**: Directory where the generated composite dashboards will be saved.
-  - `event_composite_dashboards/`: Subdirectory for storing the output dashboards.
+- **data/**: Contains input CSV files (`mn09_203a.csv` and `log_mn09_203a.csv`).
+- **scripts/**: Contains the R scripts for processing data and generating dashboards and analysis plots.
+- **plots/**: Directory where the generated composite dashboards and analysis plots will be saved.
+- **output/**: Directory where the labeled and event data CSV files will be saved.
 - **README.md**: This file.
 - **.gitignore**: Specifies files and directories to ignore in Git.
 
 ## Setup
 
 1. Clone the repository:
-    ```{bash}
+    ```bash
     git clone https://github.com/GilRaitses/ABC-Project.git
     cd ABC-Project
     ```
-2. Make sure the required CSV files are in the `data/` directory:
+2. Ensure the `data/` directory contains the required CSV files:
     - `mn09_203a.csv`
     - `log_mn09_203a.csv`
-3. Create the `output/event_composite_dashboards/` directory if it does not exist:
-    ```{bash}
-    mkdir -p output/event_composite_dashboards
+
+3. Create the `plots` and `output` directories if they don't exist:
+    ```bash
+    mkdir -p plots output
     ```
 
-## Running the Script
+## Running the Scripts
 
-1. Open R or RStudio.
-2. Set the working directory to the project folder:
-    ```{r}
-    setwd("~/ABC-Project")
-    ```
-3. Ensure you have the necessary R packages installed:
-    ```{r}
-    install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork"))
-    ```
-4. Run the script:
-    ```{r}
-    source("scripts/create_composite_dashboards.R")
-    ```
-The output files will be saved in the `output/event_composite_dashboards/` directory.
+1. **Generate the Event Data**:
+    - Open R or RStudio.
+    - Set the working directory to the project folder:
+        ```r
+        setwd("path/to/ABC-Project")
+        ```
+    - Ensure you have the necessary R packages installed:
+        ```r
+        install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork", "scales"))
+        ```
+    - Run the `create_composite_dashboards.R` script:
+        ```r
+        source("scripts/create_composite_dashboards.R")
+        ```
+
+2. **Generate the Analysis Plots**:
+    - Run the `analyze_whale_dives.R` script:
+        ```r
+        source("scripts/analyze_whale_dives.R")
+        ```
+
+The output files will be saved in the `plots/` directory. CSV files will be saved in the `output/` directory.
+
+## .gitignore
+
+Include the following in your `.gitignore` to ignore the output files and other unnecessary files:
+```r
+output/
+plots/
+*.RData
+*.Rhistory
+```

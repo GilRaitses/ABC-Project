@@ -438,7 +438,7 @@ create_composite_time_series_dashboards <- function(df, original_df, output_dir,
 }
 
 # Define the output directory
-output_dir <- "output/event_composite_dashboards"
+output_dir <- "plots"
 
 # Create and save composite time series dashboards
 create_composite_time_series_dashboards(eventData_df, lavCalf, output_dir)
