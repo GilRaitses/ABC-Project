@@ -27,7 +27,7 @@ This project processes whale tag data and creates composite time series dashboar
     install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork"))
     ```
 
-3. Place the required CSV files in the `data/` directory:
+3. Make sure the required CSV files are in the `data/` directory:
     - `mn09_203a.csv`
     - `log_mn09_203a.csv`
 
