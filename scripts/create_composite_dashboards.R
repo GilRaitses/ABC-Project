@@ -128,7 +128,7 @@ unlabeled_df <- final_df %>% filter(is.na(state) & is.na(event))
 # View the labeled and unlabeled data frames
 print("Labeled Data:")
 print(labeled_df)
-write.csv(labeled_df, "output/labeled_df.csv", row.names = FALSE)
+write.csv(labeled_df, "data/labeled_df.csv", row.names = FALSE)
 
 # Function to calculate norm jerk for each event
 calculate_event_normjerk <- function(df) {
@@ -205,7 +205,7 @@ eventData_df <- label_dive_phases(eventData_df)
 # View the updated dataframe with dive phases
 head(eventData_df)
 
-write.csv(eventData_df, "output/eventData_df.csv", row.names = FALSE)
+write.csv(eventData_df, "data/eventData_df.csv", row.names = FALSE)
 
 # Function to convert radians to degrees
 convert_to_degrees <- function(radians) {

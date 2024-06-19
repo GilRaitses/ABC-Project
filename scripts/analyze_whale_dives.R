@@ -2,12 +2,16 @@ library(dplyr)
 library(ggplot2)
 library(scales)
 eventData_df <- read.csv("data/eventData_df.csv")
+dir.create("plots/Analytics", recursive = TRUE, showWarnings = FALSE)
+ocean_colors <- c("Deep Phase" = "#1f77b4", "Shallow Phase" = "#17becf", "Surface Phase" = "#aec7e8", "Surfacing" = "#ff7f0e")
+
 # Cluster Analysis of Dive Cycles
 set.seed(123)
 kmeans_result <- kmeans(eventData_df %>% select(s, p) %>% na.omit() %>% scale(), centers = 3)
 eventData_df <- eventData_df %>%
-  mutate(cluster = kmeans_result$cluster)
-ggplot(eventData_df, aes(x = s, y = -p, color = as.factor(cluster))) +
+  mutate(cluster = as.factor(kmeans_result$cluster))
+cluster_colors <- c("1" = "#1f77b4", "2" = "#aec7e8", "3" = "#ffbb78")
+ggplot(eventData_df, aes(x = s, y = -p, color = cluster)) +
   geom_point(alpha = 0.6, size = 1.5) +
   geom_text(
     data = eventData_df %>%
@@ -32,10 +36,10 @@ ggplot(eventData_df, aes(x = s, y = -p, color = as.factor(cluster))) +
     legend.title = element_text(face = "bold"),
     legend.text = element_text(size = 12)
   ) +
-  scale_color_manual(values = ocean_colors) +
+  scale_color_manual(values = cluster_colors) +
   scale_y_continuous(breaks = seq(-40, 0, 10), labels = scales::comma) +
   scale_x_time(labels = scales::date_format("%H:%M:%S"))
-ggsave("output/plots/cluster_analysis_dive_cycles.png")
+ggsave("plots/Analytics/cluster_analysis_dive_cycles.png")
 
 # Dive Duration vs Depth
 ocean_colors <- c("Deep Phase" = "#1f77b4", "Shallow Phase" = "#17becf", "Surface Phase" = "#aec7e8", "NA" = "grey")
@@ -57,7 +61,7 @@ ggplot(eventData_df, aes(x = s, y = -p)) +
   ) +
   scale_color_manual(values = ocean_colors) +
   scale_y_continuous(breaks = seq(-40, 0, 10), labels = scales::comma)
-ggsave("output/plots/dive_duration_vs_depth.png")
+ggsave("plots/Analytics/dive_duration_vs_depth.png")
 
 
 #  Temporal Distribution and Sequencing of Events
@@ -82,5 +86,4 @@ ggplot(eventData_df, aes(x = time_sec, y = phase, color = phase)) +
   scale_color_manual(values = phase_colors) +
   scale_x_time(labels = scales::date_format("%H:%M:%S")) +
   scale_y_discrete(labels = c("Deep Phase", "Shallow Phase", "Surface Phase", "Surfacing"))
-ggsave("output/plots/temporal_distribution.png")
-
+ggsave("plots/Analytics/temporal_distribution.png")

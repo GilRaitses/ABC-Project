@@ -52,7 +52,7 @@ This project processes whale tag data and creates composite time series dashboar
         source("scripts/analyze_whale_dives.R")
         ```
 
-The output plots will be saved in the `plots/` directory. The CSV files will be saved in the `output/` directory.
+The output plots will be saved in the `plots/` directory. The CSV files will be saved in the `data/` directory.
 
 ## .gitignore
 
