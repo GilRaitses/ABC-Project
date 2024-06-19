@@ -21,17 +21,10 @@ This project processes whale tag data and creates composite time series dashboar
     git clone https://github.com/GilRaitses/ABC-Project.git
     cd ABC-Project
     ```
-
-2. Ensure you have the necessary R packages installed:
-    ```{r}
-    install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork"))
-    ```
-
-3. Make sure the required CSV files are in the `data/` directory:
+2. Make sure the required CSV files are in the `data/` directory:
     - `mn09_203a.csv`
     - `log_mn09_203a.csv`
-
-4. Create the `output/event_composite_dashboards/` directory if it does not exist:
+3. Create the `output/event_composite_dashboards/` directory if it does not exist:
     ```{bash}
     mkdir -p output/event_composite_dashboards
     ```
@@ -43,9 +36,12 @@ This project processes whale tag data and creates composite time series dashboar
     ```{r}
     setwd("~/ABC-Project")
     ```
-3. Run the script:
+3. Ensure you have the necessary R packages installed:
+    ```{r}
+    install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork"))
+    ```
+4. Run the script:
     ```{r}
     source("scripts/create_composite_dashboards.R")
     ```
-
 The output files will be saved in the `output/event_composite_dashboards/` directory.
