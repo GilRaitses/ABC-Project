@@ -8,5 +8,4 @@
 .Ruserdata
 
 # Ignore output directory
-output/
 plots/
