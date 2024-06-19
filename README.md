@@ -29,6 +29,7 @@ This project processes whale tag data and creates composite time series dashboar
 
 ## Running the Scripts
 
+<<<<<<< HEAD
 1. **Generate the Event Data**:
     - Open R or RStudio.
     - Set the working directory to the project folder:
@@ -61,3 +62,19 @@ plots/
 *.RData
 *.Rhistory
 ```
+=======
+1. Open R or RStudio.
+2. Set the working directory to the project folder:
+    ```{r}
+    setwd("~/ABC-Project")
+    ```
+3. Install the necessary R packages:
+    ```{r}
+    install.packages(c("dplyr", "fuzzyjoin", "tagtools", "tidyr", "purrr", "stringr", "ggplot2", "patchwork"))
+    ```   
+4. Run the script:
+    ```{r}
+    source("scripts/create_composite_dashboards.R")
+    ```
+The output files will be saved in the `output/event_composite_dashboards/` directory.
+>>>>>>> bf8b3bdbef19266898c37165f0f8d430dafa397c
